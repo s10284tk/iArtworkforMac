@@ -21,7 +21,6 @@
 		69D103EE1EB85ADA003D64F9 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D103ED1EB85ADA003D64F9 /* ImageViewController.swift */; };
 		69E1383F1EBE20A300C7BC9C /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E1383E1EBE20A300C7BC9C /* Kingfisher.framework */; };
 		69E138401EBE20A300C7BC9C /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 69E1383E1EBE20A300C7BC9C /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		69FB5ACF1EBE1E5300993A2C /* snoopy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 69FB5ACE1EBE1E5300993A2C /* snoopy.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,7 +53,6 @@
 		69DA5E711EB71A37002F802C /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/Mac/AlamofireImage.framework; sourceTree = "<group>"; };
 		69DA5E721EB71A37002F802C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
 		69E1383E1EBE20A300C7BC9C /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/Mac/Kingfisher.framework; sourceTree = "<group>"; };
-		69FB5ACE1EBE1E5300993A2C /* snoopy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = snoopy.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +90,6 @@
 		69C723F31EB71948003C846E /* iArtworkforMac */ = {
 			isa = PBXGroup;
 			children = (
-				69FB5ACE1EBE1E5300993A2C /* snoopy.jpg */,
 				69C723FA1EB71948003C846E /* Main.storyboard */,
 				69D103EF1EB85E6E003D64F9 /* Main */,
 				69D103ED1EB85ADA003D64F9 /* ImageViewController.swift */,
@@ -184,7 +181,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69FB5ACF1EBE1E5300993A2C /* snoopy.jpg in Resources */,
 				69C723F91EB71948003C846E /* Assets.xcassets in Resources */,
 				69C723FC1EB71948003C846E /* Main.storyboard in Resources */,
 			);

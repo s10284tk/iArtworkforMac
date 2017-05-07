@@ -72,11 +72,11 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
             cellIdentifier = cell.title
             text = item.title
             imageUrl = item.url
-            if let titleCell = tableView.make(withIdentifier: cell.title, owner: nil) as? TitleCell {
-                titleCell.itemText.stringValue = text
+            if let titleCell = tableView.make(withIdentifier: cellIdentifier, owner: nil) as? TitleCell {
                 titleCell.itemUrl = imageUrl.replacingOccurrences(of: "60x60bb.jpg", with: "600x600bb.jpg")
                 let url = URL(string: imageUrl)
                 titleCell.itemImageView.kf.setImage(with: url)
+                titleCell.itemText.stringValue = text
                 return titleCell
             } else {
                 return NSView()
@@ -84,7 +84,7 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
         } else if tableColumn == tableView.tableColumns[1] {
             cellIdentifier = cell.artist
             text = item.artist
-            if let artistCell = tableView.make(withIdentifier: cell.artist, owner: nil) as? NSTableCellView {
+            if let artistCell = tableView.make(withIdentifier: cellIdentifier, owner: nil) as? NSTableCellView {
                 artistCell.textField!.stringValue = text
                 return artistCell
             } else {
@@ -93,7 +93,7 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
         } else if tableColumn == tableView.tableColumns[2] {
             cellIdentifier = cell.album
             text = item.album
-            if let albumCell = tableView.make(withIdentifier: cell.album, owner: nil) as? NSTableCellView {
+            if let albumCell = tableView.make(withIdentifier: cellIdentifier, owner: nil) as? NSTableCellView {
                 albumCell.textField!.stringValue = text
                 return albumCell
             } else {
