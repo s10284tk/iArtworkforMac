@@ -2,7 +2,7 @@
   "commitish" : "3.2.0",
   "Mac" : [
     {
-      "hash" : "16d054788493071bcc188402251918b87598635a296f5d8aa24ce738660dcf95",
+      "hash" : "2b1f64ca1193915dd859fe1abd2a1d3cf652ded0bbc18958490b4508f61c707a",
       "name" : "AlamofireImage"
     }
   ]

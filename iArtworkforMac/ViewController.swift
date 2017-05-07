@@ -10,12 +10,14 @@ import Cocoa
 import Alamofire
 import AlamofireImage
 import SwiftyJSON
+import Kingfisher
 
 class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSource {
 
     @IBOutlet weak var textField: NSTextField!
     @IBOutlet weak var tableView: NSTableView!
     
+    @IBOutlet weak var testImage: NSImageView!
     private var Array: [(title: String, artist: String, album: String, url: String)] = []
     
     fileprivate enum cell {
@@ -58,29 +60,65 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
     func numberOfRows(in tableView: NSTableView) -> Int {
         return Array.count
     }
+    
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
         var cellIdentifier: String = ""
         var text: String = ""
+        var imageUrl: String = ""
         
         let item = Array[row]
         
         if tableColumn == tableView.tableColumns[0] {
             cellIdentifier = cell.title
             text = item.title
+            imageUrl = item.url
+            if let titleCell = tableView.make(withIdentifier: cell.title, owner: nil) as? TitleCell {
+                titleCell.itemText.stringValue = text
+                titleCell.itemUrl = imageUrl.replacingOccurrences(of: "60x60bb.jpg", with: "600x600bb.jpg")
+                let url = URL(string: imageUrl)
+                titleCell.itemImageView.kf.setImage(with: url)
+                return titleCell
+            } else {
+                return NSView()
+            }
         } else if tableColumn == tableView.tableColumns[1] {
             cellIdentifier = cell.artist
             text = item.artist
+            if let artistCell = tableView.make(withIdentifier: cell.artist, owner: nil) as? NSTableCellView {
+                artistCell.textField!.stringValue = text
+                return artistCell
+            } else {
+                return NSView()
+            }
         } else if tableColumn == tableView.tableColumns[2] {
             cellIdentifier = cell.album
             text = item.album
+            if let albumCell = tableView.make(withIdentifier: cell.album, owner: nil) as? NSTableCellView {
+                albumCell.textField!.stringValue = text
+                return albumCell
+            } else {
+                return NSView()
+            }
+        } else {
+            return NSView()
         }
-        
-        if let cellView = tableView.make(withIdentifier: cellIdentifier, owner: nil) as? NSTableCellView {
-            cellView.textField!.stringValue = text
-            return cellView
-        }
-        return nil
     }
+    
+    override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
+        if let table = sender as? NSTableView {
+            if let vc = segue.destinationController as? ImageViewController {
+                print("hello")
+                print(table.selectedRow)
+                let cell = table.rowView(atRow: table.selectedRow, makeIfNecessary: false)?.view(atColumn: 0) as? TitleCell
+                print(cell?.itemText.stringValue)
+                let title = cell?.itemText.stringValue
+                vc.itemTitle = title
+                vc.itemUrl = cell?.itemUrl
+            }
+        }
+    }
+    
+
 
     
     override func viewDidLoad() {

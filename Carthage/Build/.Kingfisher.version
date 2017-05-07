@@ -1,0 +1,9 @@
+{
+  "commitish" : "3.7.0",
+  "Mac" : [
+    {
+      "hash" : "afc2a8963b2cc5f0f4e8eefd8a79decfeab0775b56c402786ea4d0bc2736c8b5",
+      "name" : "Kingfisher"
+    }
+  ]
+}
