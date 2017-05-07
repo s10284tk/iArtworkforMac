@@ -21,6 +21,7 @@
 		69D103EE1EB85ADA003D64F9 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D103ED1EB85ADA003D64F9 /* ImageViewController.swift */; };
 		69E1383F1EBE20A300C7BC9C /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E1383E1EBE20A300C7BC9C /* Kingfisher.framework */; };
 		69E138401EBE20A300C7BC9C /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 69E1383E1EBE20A300C7BC9C /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		69E138421EBEFCB200C7BC9C /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E138411EBEFCB200C7BC9C /* Country.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,6 +54,7 @@
 		69DA5E711EB71A37002F802C /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/Mac/AlamofireImage.framework; sourceTree = "<group>"; };
 		69DA5E721EB71A37002F802C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
 		69E1383E1EBE20A300C7BC9C /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/Mac/Kingfisher.framework; sourceTree = "<group>"; };
+		69E138411EBEFCB200C7BC9C /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				69C723F41EB71948003C846E /* AppDelegate.swift */,
 				69C723F81EB71948003C846E /* Assets.xcassets */,
 				69C723FD1EB71948003C846E /* Info.plist */,
+				69E138411EBEFCB200C7BC9C /* Country.swift */,
 			);
 			path = iArtworkforMac;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				69D103EC1EB77620003D64F9 /* TitleCell.swift in Sources */,
 				69C723F71EB71948003C846E /* ViewController.swift in Sources */,
 				69D103EE1EB85ADA003D64F9 /* ImageViewController.swift in Sources */,
+				69E138421EBEFCB200C7BC9C /* Country.swift in Sources */,
 				69C723F51EB71948003C846E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

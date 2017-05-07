@@ -12,27 +12,52 @@ import AlamofireImage
 import SwiftyJSON
 import Kingfisher
 
-class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSource {
+class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSource, NSTextFieldDelegate {
 
-    @IBOutlet weak var textField: NSTextField!
     @IBOutlet weak var tableView: NSTableView!
-    
-    @IBOutlet weak var testImage: NSImageView!
+    @IBOutlet weak var textField: NSTextField!
+    @IBOutlet weak var popupButton: NSPopUpButton!
+
     private var Array: [(title: String, artist: String, album: String, url: String)] = []
+    private let country: [String] = [Country.japan.title, Country.usa.title]
     
     fileprivate enum cell {
         static let title = "titleCell"
         static let artist = "artistCell"
         static let album = "albumCell"
     }
+
+    @IBAction func selectPopupButton(_ sender: Any) {
+        popupButton.title = (popupButton.selectedItem?.title)!
+    }
     
-    @IBAction func pushButton(_ sender: Any) {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.reloadData()
+        popupButton.addItems(withTitles: country)
+    }
+    
+
+
+    @IBAction func pushEnter(_ sender: Any) {
         //初期化
         Array.removeAll()
         self.tableView.reloadData()
         
         //国選択
-        let country = "us"
+       let country: String
+        guard let item = popupButton.selectedItem else {
+            return
+        }
+        switch item.title {
+        case "Japan":
+            country = Country.japan.requestParameter
+        case "USA":
+            country = Country.usa.requestParameter
+        default:
+            country = Country.usa.requestParameter
+        }
+ 
         
         if let search = textField?.stringValue {
             let listUrl = "http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/wa/wsSearch?"
@@ -54,7 +79,6 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
                     self.tableView.reloadData()
             }
         }
-        
     }
     
     func numberOfRows(in tableView: NSTableView) -> Int {
@@ -121,10 +145,7 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
 
 
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        tableView.reloadData()
-    }
+
 
     override var representedObject: Any? {
         didSet {
@@ -135,4 +156,5 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
 
 
 }
+
 

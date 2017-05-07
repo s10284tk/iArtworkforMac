@@ -686,18 +686,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="733" height="577"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnf-ou-2fq">
-                                <rect key="frame" x="20" y="533" width="200" height="24"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="24" id="Ji1-17-M0r"/>
-                                    <constraint firstAttribute="width" constant="200" id="o1L-sm-dLb"/>
-                                </constraints>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Search" drawsBackground="YES" id="m3J-Wl-tPg">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="77" horizontalPageScroll="10" verticalLineScroll="77" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQJ-Xa-itx">
                                 <rect key="frame" x="0.0" y="0.0" width="733" height="477"/>
                                 <clipView key="contentView" id="Nch-fP-KgV">
@@ -733,7 +721,7 @@
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="67" id="cnu-hV-BoD"/>
                                                                     </constraints>
-                                                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSActionTemplate" id="R6Z-XU-YNz"/>
+                                                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="NSActionTemplate" id="R6Z-XU-YNz"/>
                                                                 </imageView>
                                                                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" allowsExpansionToolTips="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjl-Ow-Opn">
                                                                     <rect key="frame" x="76" y="29" width="258" height="17"/>
@@ -859,65 +847,57 @@
                             <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xmd-J0-zEI">
                                 <rect key="frame" x="18" y="489" width="94" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="Q8p-Su-UPm" id="dn4-vc-aag">
+                                <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="dn4-vc-aag">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="menu"/>
-                                    <menu key="menu" id="hRs-oY-2dp">
-                                        <items>
-                                            <menuItem title="Item 1" state="on" id="Q8p-Su-UPm"/>
-                                            <menuItem title="Item 2" id="oQz-n1-hZZ"/>
-                                            <menuItem title="Item 3" id="1X8-Me-PzI"/>
-                                        </items>
-                                    </menu>
+                                    <menu key="menu" id="hRs-oY-2dp"/>
                                 </popUpButtonCell>
+                                <connections>
+                                    <action selector="selectPopupButton:" target="XfG-lQ-9wD" id="qXP-1D-KdH"/>
+                                </connections>
                             </popUpButton>
                             <segmentedControl verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gRU-zx-a95">
-                                <rect key="frame" x="278" y="497" width="344" height="24"/>
+                                <rect key="frame" x="346" y="497" width="218" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="XjD-Zq-oiY">
                                     <font key="font" metaFont="system"/>
                                     <segments>
-                                        <segment width="112">
-                                            <nil key="label"/>
-                                        </segment>
-                                        <segment width="112" selected="YES" tag="1">
-                                            <nil key="label"/>
-                                        </segment>
-                                        <segment width="112">
-                                            <nil key="label"/>
-                                        </segment>
+                                        <segment label="Music" width="70"/>
+                                        <segment label="Movie" width="70" selected="YES" tag="1"/>
+                                        <segment label="TV" width="70"/>
                                     </segments>
                                 </segmentedCell>
                             </segmentedControl>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hKI-2p-Z5Y">
-                                <rect key="frame" x="234" y="526" width="82" height="35"/>
+                            <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwp-tW-4PV">
+                                <rect key="frame" x="20" y="535" width="300" height="22"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="24" id="CH6-7N-BdT"/>
-                                    <constraint firstAttribute="width" constant="70" id="eWQ-tC-469"/>
+                                    <constraint firstAttribute="width" constant="300" id="fSL-nU-Va9"/>
+                                    <constraint firstAttribute="height" constant="22" id="x3a-VY-zWi"/>
                                 </constraints>
-                                <buttonCell key="cell" type="push" title="Search" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="EP2-Cx-C6Z">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" state="on" borderStyle="bezel" placeholderString="Search" drawsBackground="YES" id="524-bD-z8e">
                                     <font key="font" metaFont="system"/>
-                                </buttonCell>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
                                 <connections>
-                                    <action selector="pushButton:" target="XfG-lQ-9wD" id="6en-2V-tLe"/>
+                                    <action selector="pushEnter:" target="XfG-lQ-9wD" id="6P8-TV-1oh"/>
+                                    <outlet property="delegate" destination="XfG-lQ-9wD" id="RON-Kf-njw"/>
                                 </connections>
-                            </button>
+                            </textField>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="hKI-2p-Z5Y" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="8Al-zw-nvP"/>
+                            <constraint firstItem="rwp-tW-4PV" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="9Im-Fb-vkm"/>
                             <constraint firstItem="dQJ-Xa-itx" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="IB2-CY-8hc"/>
-                            <constraint firstItem="jnf-ou-2fq" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="KVj-nI-BDs"/>
+                            <constraint firstItem="rwp-tW-4PV" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="IWQ-CX-HYT"/>
                             <constraint firstAttribute="bottom" secondItem="dQJ-Xa-itx" secondAttribute="bottom" id="RYJ-cR-Vlf"/>
-                            <constraint firstItem="hKI-2p-Z5Y" firstAttribute="leading" secondItem="jnf-ou-2fq" secondAttribute="trailing" constant="20" id="iEX-FR-YRh"/>
-                            <constraint firstItem="jnf-ou-2fq" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="lCi-z1-Rq7"/>
                             <constraint firstAttribute="trailing" secondItem="dQJ-Xa-itx" secondAttribute="trailing" id="oJn-hY-Tyi"/>
                             <constraint firstItem="dQJ-Xa-itx" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="100" id="rSp-23-b2b"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="popupButton" destination="xmd-J0-zEI" id="26T-iA-crs"/>
                         <outlet property="tableView" destination="bS3-Dj-PZs" id="2pK-jP-Ffx"/>
-                        <outlet property="textField" destination="jnf-ou-2fq" id="9nC-gy-Yl0"/>
+                        <outlet property="textField" destination="rwp-tW-4PV" id="pEB-1t-jJb"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
