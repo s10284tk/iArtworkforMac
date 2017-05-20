@@ -11,6 +11,7 @@ import Cocoa
 internal final class TitleCell: NSTableCellView {
 
     var itemUrl: String?
+    var album: String?
     
 
     @IBOutlet weak var itemImageView: NSImageView!

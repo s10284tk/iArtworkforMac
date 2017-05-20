@@ -13,6 +13,34 @@ internal enum Country {
     case japan
     case usa
     
+    static var currentCountry: Country {
+        return Country.country(DeviceData.countryRawValue)
+    }
+    
+    private static func country(_ rawValue: Int) -> Country {
+        switch rawValue {
+        case 0:
+            return .japan
+            
+        case 1:
+            return .usa
+            
+        default:
+            assertionFailure("ここには来ないはず")
+            return .japan
+        }
+    }
+    
+    var rawValue: Int {
+        switch self {
+        case .japan:
+            return 0
+            
+        case .usa:
+            return 1
+        }
+    }
+    
     var title: String {
         switch self{
         case .japan:

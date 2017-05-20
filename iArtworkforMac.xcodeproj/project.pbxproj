@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		693905D31ED091D2000CC1BB /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693905D21ED091D2000CC1BB /* Genre.swift */; };
 		6984842E1EB71CC500293B1A /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69DA5E701EB71A37002F802C /* SwiftyJSON.framework */; };
 		6984842F1EB71CC500293B1A /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 69DA5E701EB71A37002F802C /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		698484301EB71CC500293B1A /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69DA5E711EB71A37002F802C /* AlamofireImage.framework */; };
@@ -22,6 +23,8 @@
 		69E1383F1EBE20A300C7BC9C /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E1383E1EBE20A300C7BC9C /* Kingfisher.framework */; };
 		69E138401EBE20A300C7BC9C /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 69E1383E1EBE20A300C7BC9C /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		69E138421EBEFCB200C7BC9C /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E138411EBEFCB200C7BC9C /* Country.swift */; };
+		69E138441EBF182900C7BC9C /* ArtwrokSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E138431EBF182900C7BC9C /* ArtwrokSize.swift */; };
+		69E138471EBFBB8700C7BC9C /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E138461EBFBB8700C7BC9C /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +45,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		693905D21ED091D2000CC1BB /* Genre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 		69C723F11EB71948003C846E /* iArtworkforMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iArtworkforMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69C723F41EB71948003C846E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69C723F61EB71948003C846E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +59,8 @@
 		69DA5E721EB71A37002F802C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
 		69E1383E1EBE20A300C7BC9C /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/Mac/Kingfisher.framework; sourceTree = "<group>"; };
 		69E138411EBEFCB200C7BC9C /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		69E138431EBF182900C7BC9C /* ArtwrokSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtwrokSize.swift; sourceTree = "<group>"; };
+		69E138461EBFBB8700C7BC9C /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,12 +99,13 @@
 			isa = PBXGroup;
 			children = (
 				69C723FA1EB71948003C846E /* Main.storyboard */,
-				69D103EF1EB85E6E003D64F9 /* Main */,
-				69D103ED1EB85ADA003D64F9 /* ImageViewController.swift */,
 				69C723F41EB71948003C846E /* AppDelegate.swift */,
+				69D103EF1EB85E6E003D64F9 /* Main */,
+				69E138481EBFC04A00C7BC9C /* ImageView */,
+				69E138451EBFBB6100C7BC9C /* Model */,
+				69E138491EBFC07300C7BC9C /* enum */,
 				69C723F81EB71948003C846E /* Assets.xcassets */,
 				69C723FD1EB71948003C846E /* Info.plist */,
-				69E138411EBEFCB200C7BC9C /* Country.swift */,
 			);
 			path = iArtworkforMac;
 			sourceTree = "<group>";
@@ -121,6 +128,32 @@
 				69DA5E721EB71A37002F802C /* Alamofire.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		69E138451EBFBB6100C7BC9C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				69E138461EBFBB8700C7BC9C /* Data.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		69E138481EBFC04A00C7BC9C /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				69D103ED1EB85ADA003D64F9 /* ImageViewController.swift */,
+			);
+			name = ImageView;
+			sourceTree = "<group>";
+		};
+		69E138491EBFC07300C7BC9C /* enum */ = {
+			isa = PBXGroup;
+			children = (
+				69E138411EBEFCB200C7BC9C /* Country.swift */,
+				69E138431EBF182900C7BC9C /* ArtwrokSize.swift */,
+				693905D21ED091D2000CC1BB /* Genre.swift */,
+			);
+			name = enum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,11 +229,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69E138471EBFBB8700C7BC9C /* Data.swift in Sources */,
 				69D103EC1EB77620003D64F9 /* TitleCell.swift in Sources */,
 				69C723F71EB71948003C846E /* ViewController.swift in Sources */,
 				69D103EE1EB85ADA003D64F9 /* ImageViewController.swift in Sources */,
+				69E138441EBF182900C7BC9C /* ArtwrokSize.swift in Sources */,
 				69E138421EBEFCB200C7BC9C /* Country.swift in Sources */,
 				69C723F51EB71948003C846E /* AppDelegate.swift in Sources */,
+				693905D31ED091D2000CC1BB /* Genre.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

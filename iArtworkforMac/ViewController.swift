@@ -17,54 +17,73 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
     @IBOutlet weak var tableView: NSTableView!
     @IBOutlet weak var textField: NSTextField!
     @IBOutlet weak var popupButton: NSPopUpButton!
+    @IBOutlet weak var segment: NSSegmentedControl!
 
     private var Array: [(title: String, artist: String, album: String, url: String)] = []
     private let country: [String] = [Country.japan.title, Country.usa.title]
+    private let genre: [Genre] = [.music, .movie, .tv]
     
     fileprivate enum cell {
         static let title = "titleCell"
         static let artist = "artistCell"
         static let album = "albumCell"
     }
-
-    @IBAction func selectPopupButton(_ sender: Any) {
-        popupButton.title = (popupButton.selectedItem?.title)!
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.reloadData()
+        //ポップアップ初期設定
+        let currentCountry = Country.currentCountry
         popupButton.addItems(withTitles: country)
+        popupButton.selectItem(at: currentCountry.rawValue)
+        
+        // セグメント初期設定
+        for (index, elements) in genre.enumerated() {
+            segment.setLabel(elements.title, forSegment: index)
+        }
+        let currentGenre = Genre.currentGenre
+        segment.setSelected(true, forSegment: currentGenre.rawValue)
     }
     
+    // pushSelectPopupButton
+    @IBAction func selectPopupButton(_ sender: Any) {
+        
+        guard let title = popupButton.selectedItem?.title else {
+            return
+        }
+        popupButton.title = title
+        DeviceData.countryRawValue = popupButton.indexOfSelectedItem
+        print(popupButton.indexOfSelectedItem)
+    }
+    
+    // selectSegmentedController
+    @IBAction func selectSegment(_ sender: Any) {
+        DeviceData.genreRawValue = segment.selectedSegment
+    }
 
 
     @IBAction func pushEnter(_ sender: Any) {
-        //初期化
+        // 初期化
         Array.removeAll()
         self.tableView.reloadData()
         
-        //国選択
-       let country: String
-        guard let item = popupButton.selectedItem else {
-            return
-        }
-        switch item.title {
-        case "Japan":
-            country = Country.japan.requestParameter
-        case "USA":
-            country = Country.usa.requestParameter
-        default:
-            country = Country.usa.requestParameter
-        }
- 
+        // 国選択
+        let country: String
+        let currentCountry = Country.currentCountry
+        country = currentCountry.requestParameter
         
+        // ジャンル選択
+        let genre: String
+        let currentGenre = Genre.currentGenre
+        genre = currentGenre.requestParameter
+ 
+        // JSON処理
         if let search = textField?.stringValue {
             let listUrl = "http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/wa/wsSearch?"
             Alamofire.request(listUrl, parameters: [
                 "term": search,
                 "country": country,
-                "entity": "musicTrack"
+                "entity": genre
                 ])
                 .responseJSON{ response in
                     let json = JSON(response.result.value ?? 0)
@@ -81,13 +100,18 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
         }
     }
     
+    // MARK: - NSTableViewDataSource
+    
     func numberOfRows(in tableView: NSTableView) -> Int {
         return Array.count
     }
     
+    // MARK: - NSTableViewDelegate
+    
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
         var cellIdentifier: String = ""
         var text: String = ""
+        var albumInfo: String = ""
         var imageUrl: String = ""
         
         let item = Array[row]
@@ -96,11 +120,13 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
             cellIdentifier = cell.title
             text = item.title
             imageUrl = item.url
+            albumInfo = item.album
             if let titleCell = tableView.make(withIdentifier: cellIdentifier, owner: nil) as? TitleCell {
-                titleCell.itemUrl = imageUrl.replacingOccurrences(of: "60x60bb.jpg", with: "600x600bb.jpg")
+                titleCell.itemUrl = imageUrl
                 let url = URL(string: imageUrl)
                 titleCell.itemImageView.kf.setImage(with: url)
                 titleCell.itemText.stringValue = text
+                titleCell.album = albumInfo
                 return titleCell
             } else {
                 return NSView()
@@ -134,25 +160,18 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
                 print("hello")
                 print(table.selectedRow)
                 let cell = table.rowView(atRow: table.selectedRow, makeIfNecessary: false)?.view(atColumn: 0) as? TitleCell
-                print(cell?.itemText.stringValue)
-                let title = cell?.itemText.stringValue
+                print(cell?.album ?? "error")
+                let title = cell?.album
                 vc.itemTitle = title
                 vc.itemUrl = cell?.itemUrl
             }
         }
     }
-    
-
-
-    
-
 
     override var representedObject: Any? {
         didSet {
         }
     }
-    
-    
 
 
 }

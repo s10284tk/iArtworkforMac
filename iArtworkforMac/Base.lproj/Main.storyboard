@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12120"/>
@@ -824,9 +824,9 @@
                                                 </tableColumn>
                                             </tableColumns>
                                             <connections>
-                                                <outlet property="dataSource" destination="XfG-lQ-9wD" id="oF7-ux-qj6"/>
-                                                <outlet property="delegate" destination="XfG-lQ-9wD" id="dpP-Ed-DpX"/>
-                                                <segue destination="bHG-GO-5Nm" kind="sheet" id="oNV-F3-Dgd"/>
+                                                <outlet property="dataSource" destination="XfG-lQ-9wD" id="ofK-s6-feD"/>
+                                                <outlet property="delegate" destination="XfG-lQ-9wD" id="GOE-Yf-9jD"/>
+                                                <segue destination="bHG-GO-5Nm" kind="sheet" id="Hia-DN-kby"/>
                                             </connections>
                                         </tableView>
                                     </subviews>
@@ -835,7 +835,7 @@
                                     <rect key="frame" x="1" y="460" width="731" height="16"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
-                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="Qcb-7O-Gnc">
+                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="Qcb-7O-Gnc">
                                     <rect key="frame" x="-15" y="0.0" width="16" height="0.0"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
@@ -856,18 +856,6 @@
                                     <action selector="selectPopupButton:" target="XfG-lQ-9wD" id="qXP-1D-KdH"/>
                                 </connections>
                             </popUpButton>
-                            <segmentedControl verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gRU-zx-a95">
-                                <rect key="frame" x="346" y="497" width="218" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="XjD-Zq-oiY">
-                                    <font key="font" metaFont="system"/>
-                                    <segments>
-                                        <segment label="Music" width="70"/>
-                                        <segment label="Movie" width="70" selected="YES" tag="1"/>
-                                        <segment label="TV" width="70"/>
-                                    </segments>
-                                </segmentedCell>
-                            </segmentedControl>
                             <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwp-tW-4PV">
                                 <rect key="frame" x="20" y="535" width="300" height="22"/>
                                 <constraints>
@@ -884,19 +872,40 @@
                                     <outlet property="delegate" destination="XfG-lQ-9wD" id="RON-Kf-njw"/>
                                 </connections>
                             </textField>
+                            <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gRU-zx-a95">
+                                <rect key="frame" x="497" y="490" width="218" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="214" id="Rde-rg-xLp"/>
+                                    <constraint firstAttribute="height" constant="21" id="tcW-4i-dQa"/>
+                                </constraints>
+                                <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="XjD-Zq-oiY">
+                                    <font key="font" metaFont="system"/>
+                                    <segments>
+                                        <segment label="Music" width="70"/>
+                                        <segment label="Movie" width="70" selected="YES" tag="1"/>
+                                        <segment label="TV" width="70"/>
+                                    </segments>
+                                </segmentedCell>
+                                <connections>
+                                    <action selector="selectSegment:" target="XfG-lQ-9wD" id="UsK-9k-Xjq"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <constraints>
                             <constraint firstItem="rwp-tW-4PV" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="9Im-Fb-vkm"/>
                             <constraint firstItem="dQJ-Xa-itx" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="IB2-CY-8hc"/>
                             <constraint firstItem="rwp-tW-4PV" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="IWQ-CX-HYT"/>
+                            <constraint firstAttribute="trailing" secondItem="gRU-zx-a95" secondAttribute="trailing" constant="20" id="N7r-32-f4Z"/>
                             <constraint firstAttribute="bottom" secondItem="dQJ-Xa-itx" secondAttribute="bottom" id="RYJ-cR-Vlf"/>
+                            <constraint firstItem="gRU-zx-a95" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="64" id="cq2-IH-r5z"/>
                             <constraint firstAttribute="trailing" secondItem="dQJ-Xa-itx" secondAttribute="trailing" id="oJn-hY-Tyi"/>
                             <constraint firstItem="dQJ-Xa-itx" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="100" id="rSp-23-b2b"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="popupButton" destination="xmd-J0-zEI" id="26T-iA-crs"/>
-                        <outlet property="tableView" destination="bS3-Dj-PZs" id="2pK-jP-Ffx"/>
+                        <outlet property="segment" destination="gRU-zx-a95" id="PSo-te-tkD"/>
+                        <outlet property="tableView" destination="bS3-Dj-PZs" id="PMD-6J-4uk"/>
                         <outlet property="textField" destination="rwp-tW-4PV" id="pEB-1t-jJb"/>
                     </connections>
                 </viewController>
@@ -918,23 +927,21 @@
                                     <constraint firstAttribute="width" constant="400" id="JRP-3U-PuE"/>
                                     <constraint firstAttribute="height" constant="400" id="kyr-qM-o62"/>
                                 </constraints>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" imageFrameStyle="photo" id="WOl-hN-Y1E"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" imageFrameStyle="groove" id="WOl-hN-Y1E"/>
                             </imageView>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t6o-nU-AMW">
-                                <rect key="frame" x="14" y="465" width="70" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="Save" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="KGN-QS-lkH">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="t6o-nU-AMW">
+                                <rect key="frame" x="14" y="13" width="70" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="M2T-De-m6n"/>
+                                    <constraint firstAttribute="width" constant="58" id="yaS-nf-cK5"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="save" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="KGN-QS-lkH">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
-                            </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i08-we-6gH">
-                                <rect key="frame" x="80" y="465" width="142" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="SendtoClipboard" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Jdq-rr-1bR">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
+                                <connections>
+                                    <action selector="save:" target="bHG-GO-5Nm" id="fNV-kv-95Y"/>
+                                </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hgK-0I-Tt1">
                                 <rect key="frame" x="521" y="13" width="73" height="32"/>
@@ -950,31 +957,56 @@
                                     <action selector="pushButton:" target="bHG-GO-5Nm" id="3If-be-k8d"/>
                                 </connections>
                             </button>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UWM-ic-1xO">
-                                <rect key="frame" x="250" y="474" width="174" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="bTU-Ux-0th">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UWM-ic-1xO">
+                                <rect key="frame" x="217" y="469" width="174" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="aa9-6W-dkW"/>
+                                    <constraint firstAttribute="width" constant="170" id="axU-DI-Bzw"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Label" id="bTU-Ux-0th">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <segmentedControl verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c1s-Hd-0U7">
+                                <rect key="frame" x="120" y="18" width="369" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="Pv6-cQ-UWR">
+                                    <font key="font" metaFont="system"/>
+                                    <segments>
+                                        <segment width="121"/>
+                                        <segment width="120" selected="YES" tag="1"/>
+                                        <segment width="120">
+                                            <nil key="label"/>
+                                        </segment>
+                                    </segments>
+                                </segmentedCell>
+                                <connections>
+                                    <action selector="pushSeg:" target="bHG-GO-5Nm" id="v7G-p1-jTm"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="UWM-ic-1xO" firstAttribute="top" secondItem="hhx-eq-6jv" secondAttribute="top" constant="22" id="Aj1-rU-BIS"/>
+                            <constraint firstAttribute="bottom" secondItem="t6o-nU-AMW" secondAttribute="bottom" constant="20" id="D1U-DH-zJd"/>
+                            <constraint firstItem="UWM-ic-1xO" firstAttribute="centerX" secondItem="hhx-eq-6jv" secondAttribute="centerX" id="GNp-uF-LlV"/>
                             <constraint firstItem="QWL-Qo-ip6" firstAttribute="centerX" secondItem="hhx-eq-6jv" secondAttribute="centerX" id="Lr8-OH-Xeh"/>
                             <constraint firstItem="QWL-Qo-ip6" firstAttribute="centerY" secondItem="hhx-eq-6jv" secondAttribute="centerY" id="aDk-T6-4U7"/>
                             <constraint firstAttribute="trailing" secondItem="hgK-0I-Tt1" secondAttribute="trailing" constant="20" id="jK0-U6-op6"/>
+                            <constraint firstItem="t6o-nU-AMW" firstAttribute="leading" secondItem="hhx-eq-6jv" secondAttribute="leading" constant="20" id="qoE-hI-ttc"/>
                             <constraint firstAttribute="bottom" secondItem="hgK-0I-Tt1" secondAttribute="bottom" constant="20" id="syT-yy-w2o"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="itemImageView" destination="QWL-Qo-ip6" id="JIh-qI-mYd"/>
                         <outlet property="label" destination="UWM-ic-1xO" id="leM-Kg-Pr0"/>
+                        <outlet property="segment" destination="c1s-Hd-0U7" id="3uJ-Rt-4Xu"/>
                     </connections>
                 </viewController>
                 <customObject id="PZC-vZ-wBC" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1058" y="434.5"/>
+            <point key="canvasLocation" x="1042" y="826"/>
         </scene>
     </scenes>
     <resources>
