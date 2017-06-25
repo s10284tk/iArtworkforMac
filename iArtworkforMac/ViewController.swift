@@ -9,7 +9,6 @@
 import Cocoa
 import Alamofire
 import AlamofireImage
-import SwiftyJSON
 import Kingfisher
 
 class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSource, NSTextFieldDelegate {
@@ -77,7 +76,17 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
         let currentGenre = Genre.currentGenre
         genre = currentGenre.requestParameter
  
-        // JSON処理
+        // JSON処理のCodable準備
+        struct Json: Codable {
+            let results: [SongData]
+            struct SongData: Codable{
+                let trackCensoredName: String
+                let artistName: String
+                let collectionCensoredName: String
+                let artworkUrl60: String
+            }
+        }
+        
         if let search = textField?.stringValue {
             let listUrl = "http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/wa/wsSearch?"
             Alamofire.request(listUrl, parameters: [
@@ -85,15 +94,27 @@ class ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSour
                 "country": country,
                 "entity": genre
                 ])
-                .responseJSON{ response in
-                    let json = JSON(response.result.value ?? 0)
-                    json["results"].forEach{(i, data) in
-                        let title: String = data["trackCensoredName"].stringValue
-                        let artist: String = data["artistName"].stringValue
-                        let album: String = data["collectionCensoredName"].stringValue
-                        let url: String = data["artworkUrl60"].stringValue
-                        let list = (title, artist, album, url)
-                        self.Array.append(list)
+                .responseData{ response in
+                    // codableでデコード
+                    guard let jsonData = response.result.value else {
+                        print("data is nil")
+                        return
+                    }
+                    let decoder: JSONDecoder = JSONDecoder()
+                    do {
+                        let decodedJson: Json = try decoder.decode(Json.self, from: jsonData)
+                        for (_, element) in decodedJson.results.enumerated(){
+                            let title: String = element.trackCensoredName
+                            let artist: String = element.artistName
+                            let album: String = element.collectionCensoredName
+                            let url: String = element.artworkUrl60
+                            let list = (title, artist, album, url)
+                            self.Array.append(list)
+                        }
+                        
+                        print(decodedJson.results[0].trackCensoredName)
+                    } catch {
+                        print("json decode faild")
                     }
                     self.tableView.reloadData()
             }
