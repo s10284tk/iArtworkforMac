@@ -19,7 +19,7 @@ class ImageViewController: NSViewController {
     
     var itemTitle: String?
     var itemUrl: String?
-    var clipBoard = NSPasteboard.general()
+    var clipBoard = NSPasteboard.general
     let segArray: [ArtworkSize] = [.small, .medium, .large]
 
     override func viewDidLoad() {
@@ -71,11 +71,11 @@ class ImageViewController: NSViewController {
         savePanel.showsTagField = false
         savePanel.nameFieldStringValue = "\(title).jpg"
         savePanel.begin { result in
-            if result == NSFileHandlingPanelOKButton {
+            if result.rawValue == NSFileHandlingPanelOKButton {
                 guard let url = savePanel.url else { return }
                 // ファイルに書き込む
                 if let bits = self.itemImageView.image?.representations.first as? NSBitmapImageRep {
-                    let data = bits.representation(using: .JPEG, properties: [:])
+                    let data = bits.representation(using: .jpeg, properties: [:])
                     do {
                         try data?.write(to: url)
                         //ウィンドウを閉じる
