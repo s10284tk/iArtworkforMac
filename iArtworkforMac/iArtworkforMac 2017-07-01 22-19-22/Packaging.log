@@ -1,0 +1,416 @@
+2017-07-01 13:18:53 +0000  Initial pipeline context: <IDEDistributionProcessingPipelineContext: 0x7fb2eca02120; archive(resolved)='<IDEArchive: 0x7fb2e98b0350>', distributionTask(resolved)='2', distributionMethod(resolved)='<IDEDistributionMethodDevelopmentSignedMac: 0x7fb2e5b21ec0>', team(resolved)='<IDEProvisioningDisambiguatableBasicTeam: 0x7fb2fa457eb0; teamID='ZF2L8YKC2B', teamName='貴臣 窪田 (Personal Team)', username='tk1313@me.com', teamType='Personal Team', isFreeProvisioningTeam='1'>'>
+	Chain (10, self inclusive):
+	<IDEDistributionProcessingPipelineContext: 0x7fb2eca02120; archive = '(null)', distributionMethod='(null)', team='(null)'>
+	<IDEDistributionProcessingPipelineContext: 0x7fb2eca17bc0; archive = '(null)', distributionMethod='(null)', team='(null)'>
+	<IDEDistributionContext: 0x7fb2ecb47780; archive = '(null)', distributionMethod='(null)', team='(null)'>
+	<IDEDistributionContext: 0x7fb2ecb24280; archive = '(null)', distributionMethod='(null)', team='(null)'>
+	<IDEDistributionContext: 0x7fb2e2962020; archive = '(null)', distributionMethod='(null)', team='(null)'>
+	<IDEDistributionContext: 0x7fb2e2959f10; archive = '(null)', distributionMethod='(null)', team='(null)'>
+	<IDEDistributionContext: 0x7fb2ecb18c80; archive = '(null)', distributionMethod='(null)', team='<IDEProvisioningDisambiguatableBasicTeam: 0x7fb2fa457eb0; teamID='ZF2L8YKC2B', teamName='貴臣 窪田 (Personal Team)', username='tk1313@me.com', teamType='Personal Team', isFreeProvisioningTeam='1'>'>
+	<IDEDistributionContext: 0x7fb2fa0e1c30; archive = '(null)', distributionMethod='(null)', team='<null>'>
+	<IDEDistributionContext: 0x7fb2e6980b90; archive = '(null)', distributionMethod='<IDEDistributionMethodDevelopmentSignedMac: 0x7fb2e5b21ec0>', team='(null)'>
+	<IDEDistributionContext: 0x7fb2ec9c6460; archive = '<IDEArchive: 0x7fb2e98b0350>', distributionMethod='(null)', team='(null)'>
+</IDEDistributionProcessingPipelineContext: 0x7fb2eca02120>
+2017-07-01 13:18:53 +0000  Processing step: IDEDistributionCreateDestRootStep
+2017-07-01 13:18:53 +0000  Processing step: IDEDistributionCopyItemStep
+2017-07-01 13:18:53 +0000  Running /usr/bin/ditto '-V' '/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app'
+2017-07-01 13:18:53 +0000  >>> Copying /Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app 
+2017-07-01 13:18:53 +0000  copying file ./Contents/_CodeSignature/CodeResources ... 
+2017-07-01 13:18:53 +0000  9542 bytes for ./Contents/_CodeSignature/CodeResources
+2017-07-01 13:18:53 +0000  copying symlink ./Contents/Frameworks/Alamofire.framework/Alamofire ... 
+2017-07-01 13:18:53 +0000  linked ./Contents/Frameworks/Alamofire.framework/Alamofire
+copying symlink ./Contents/Frameworks/Alamofire.framework/Resources ... 
+2017-07-01 13:18:53 +0000  linked ./Contents/Frameworks/Alamofire.framework/Resources
+2017-07-01 13:18:53 +0000  copying file ./Contents/Frameworks/Alamofire.framework/Versions/A/_CodeSignature/CodeResources ... 
+2017-07-01 13:18:53 +0000  2514 bytes for ./Contents/Frameworks/Alamofire.framework/Versions/A/_CodeSignature/CodeResources
+2017-07-01 13:18:53 +0000  copying file ./Contents/Frameworks/Alamofire.framework/Versions/A/Alamofire ... 
+2017-07-01 13:18:53 +0000  1372928 bytes for ./Contents/Frameworks/Alamofire.framework/Versions/A/Alamofire
+2017-07-01 13:18:53 +0000  copying file ./Contents/Frameworks/Alamofire.framework/Versions/A/Resources/Info.plist ... 
+1321 bytes for ./Contents/Frameworks/Alamofire.framework/Versions/A/Resources/Info.plist
+copying symlink ./Contents/Frameworks/Alamofire.framework/Versions/Current ... 
+linked ./Contents/Frameworks/Alamofire.framework/Versions/Current
+copying symlink ./Contents/Frameworks/AlamofireImage.framework/AlamofireImage ... 
+linked ./Contents/Frameworks/AlamofireImage.framework/AlamofireImage
+copying symlink ./Contents/Frameworks/AlamofireImage.framework/Resources ... 
+linked ./Contents/Frameworks/AlamofireImage.framework/Resources
+copying file ./Contents/Frameworks/AlamofireImage.framework/Versions/A/_CodeSignature/CodeResources ... 
+2514 bytes for ./Contents/Frameworks/AlamofireImage.framework/Versions/A/_CodeSignature/CodeResources
+copying file ./Contents/Frameworks/AlamofireImage.framework/Versions/A/AlamofireImage ... 
+387136 bytes for ./Contents/Frameworks/AlamofireImage.framework/Versions/A/AlamofireImage
+2017-07-01 13:18:53 +0000  copying file ./Contents/Frameworks/AlamofireImage.framework/Versions/A/Resources/Info.plist ... 
+1336 bytes for ./Contents/Frameworks/AlamofireImage.framework/Versions/A/Resources/Info.plist
+copying symlink ./Contents/Frameworks/AlamofireImage.framework/Versions/Current ... 
+linked ./Contents/Frameworks/AlamofireImage.framework/Versions/Current
+2017-07-01 13:18:53 +0000  copying symlink ./Contents/Frameworks/Kingfisher.framework/Kingfisher ... 
+2017-07-01 13:18:53 +0000  linked ./Contents/Frameworks/Kingfisher.framework/Kingfisher
+copying symlink ./Contents/Frameworks/Kingfisher.framework/Resources ... 
+2017-07-01 13:18:53 +0000  linked ./Contents/Frameworks/Kingfisher.framework/Resources
+2017-07-01 13:18:53 +0000  copying file ./Contents/Frameworks/Kingfisher.framework/Versions/A/_CodeSignature/CodeResources ... 
+2017-07-01 13:18:53 +0000  2514 bytes for ./Contents/Frameworks/Kingfisher.framework/Versions/A/_CodeSignature/CodeResources
+2017-07-01 13:18:53 +0000  copying file ./Contents/Frameworks/Kingfisher.framework/Versions/A/Kingfisher ... 
+2017-07-01 13:18:53 +0000  1209056 bytes for ./Contents/Frameworks/Kingfisher.framework/Versions/A/Kingfisher
+2017-07-01 13:18:53 +0000  copying file ./Contents/Frameworks/Kingfisher.framework/Versions/A/Resources/Info.plist ... 
+1330 bytes for ./Contents/Frameworks/Kingfisher.framework/Versions/A/Resources/Info.plist
+copying symlink ./Contents/Frameworks/Kingfisher.framework/Versions/Current ... 
+linked ./Contents/Frameworks/Kingfisher.framework/Versions/Current
+copying file ./Contents/Frameworks/libswiftAccelerate.dylib ... 
+61392 bytes for ./Contents/Frameworks/libswiftAccelerate.dylib
+copying file ./Contents/Frameworks/libswiftAppKit.dylib ... 
+134400 bytes for ./Contents/Frameworks/libswiftAppKit.dylib
+copying file ./Contents/Frameworks/libswiftCore.dylib ... 
+2017-07-01 13:18:53 +0000  6812928 bytes for ./Contents/Frameworks/libswiftCore.dylib
+copying file ./Contents/Frameworks/libswiftCoreData.dylib ... 
+2017-07-01 13:18:53 +0000  89168 bytes for ./Contents/Frameworks/libswiftCoreData.dylib
+copying file ./Contents/Frameworks/libswiftCoreFoundation.dylib ... 
+31600 bytes for ./Contents/Frameworks/libswiftCoreFoundation.dylib
+copying file ./Contents/Frameworks/libswiftCoreGraphics.dylib ... 
+149744 bytes for ./Contents/Frameworks/libswiftCoreGraphics.dylib
+copying file ./Contents/Frameworks/libswiftCoreImage.dylib ... 
+35776 bytes for ./Contents/Frameworks/libswiftCoreImage.dylib
+copying file ./Contents/Frameworks/libswiftDarwin.dylib ... 
+71968 bytes for ./Contents/Frameworks/libswiftDarwin.dylib
+copying file ./Contents/Frameworks/libswiftDispatch.dylib ... 
+300912 bytes for ./Contents/Frameworks/libswiftDispatch.dylib
+copying file ./Contents/Frameworks/libswiftFoundation.dylib ... 
+2017-07-01 13:18:53 +0000  2801968 bytes for ./Contents/Frameworks/libswiftFoundation.dylib
+copying file ./Contents/Frameworks/libswiftIOKit.dylib ... 
+35808 bytes for ./Contents/Frameworks/libswiftIOKit.dylib
+copying file ./Contents/Frameworks/libswiftObjectiveC.dylib ... 
+47248 bytes for ./Contents/Frameworks/libswiftObjectiveC.dylib
+copying file ./Contents/Frameworks/libswiftos.dylib ... 
+46560 bytes for ./Contents/Frameworks/libswiftos.dylib
+copying file ./Contents/Frameworks/libswiftQuartzCore.dylib ... 
+48240 bytes for ./Contents/Frameworks/libswiftQuartzCore.dylib
+copying file ./Contents/Frameworks/libswiftXPC.dylib ... 
+35888 bytes for ./Contents/Frameworks/libswiftXPC.dylib
+copying file ./Contents/Info.plist ... 
+2017-07-01 13:18:53 +0000  1616 bytes for ./Contents/Info.plist
+copying file ./Contents/MacOS/iArtworkforMac ... 
+119168 bytes for ./Contents/MacOS/iArtworkforMac
+copying file ./Contents/PkgInfo ... 
+8 bytes for ./Contents/PkgInfo
+copying file ./Contents/Resources/AppIcon.icns ... 
+87565 bytes for ./Contents/Resources/AppIcon.icns
+copying file ./Contents/Resources/Base.lproj/Main.storyboardc/bHG-GO-5Nm-view-hhx-eq-6jv.nib ... 
+2017-07-01 13:18:53 +0000  7670 bytes for ./Contents/Resources/Base.lproj/Main.storyboardc/bHG-GO-5Nm-view-hhx-eq-6jv.nib
+copying file ./Contents/Resources/Base.lproj/Main.storyboardc/Info.plist ... 
+2017-07-01 13:18:53 +0000  586 bytes for ./Contents/Resources/Base.lproj/Main.storyboardc/Info.plist
+2017-07-01 13:18:53 +0000  copying file ./Contents/Resources/Base.lproj/Main.storyboardc/MainMenu.nib ... 
+2017-07-01 13:18:53 +0000  35800 bytes for ./Contents/Resources/Base.lproj/Main.storyboardc/MainMenu.nib
+copying file ./Contents/Resources/Base.lproj/Main.storyboardc/NSViewController-bHG-GO-5Nm.nib ... 
+2017-07-01 13:18:53 +0000  1847 bytes for ./Contents/Resources/Base.lproj/Main.storyboardc/NSViewController-bHG-GO-5Nm.nib
+2017-07-01 13:18:53 +0000  copying file ./Contents/Resources/Base.lproj/Main.storyboardc/NSWindowController-B8D-0N-5wS.nib ... 
+2017-07-01 13:18:53 +0000  4148 bytes for ./Contents/Resources/Base.lproj/Main.storyboardc/NSWindowController-B8D-0N-5wS.nib
+copying file ./Contents/Resources/Base.lproj/Main.storyboardc/XfG-lQ-9wD-view-m2S-Jp-Qdl.nib ... 
+2017-07-01 13:18:53 +0000  24647 bytes for ./Contents/Resources/Base.lproj/Main.storyboardc/XfG-lQ-9wD-view-m2S-Jp-Qdl.nib
+2017-07-01 13:18:53 +0000  /usr/bin/ditto exited with 0
+2017-07-01 13:18:53 +0000  Processing step: IDEDistributionEmbedProfileStep
+2017-07-01 13:18:53 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fb2ec6948b0 'org.alamofire.Alamofire' '<DVTFilePath:0x7fb2e9c87ed0:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/Alamofire.framework/Versions/A'>'>
+2017-07-01 13:18:53 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fb2e29c3640 'org.alamofire.AlamofireImage' '<DVTFilePath:0x7fb2e1fa82a0:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/AlamofireImage.framework/Versions/A'>'>
+2017-07-01 13:18:53 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fb2e68e7520 'com.onevcat.Kingfisher-OSX' '<DVTFilePath:0x7fb2e9c766c0:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/Kingfisher.framework/Versions/A'>'>
+2017-07-01 13:18:53 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fb2e9f99a00 'com.apple.dt.runtime.swiftAccelerate' '<DVTFilePath:0x7fb2ec90d370:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftAccelerate.dylib'>'>
+2017-07-01 13:18:53 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fb2e9c43b10 'com.apple.dt.runtime.swiftAppKit' '<DVTFilePath:0x7fb2ec9b1ef0:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftAppKit.dylib'>'>
+2017-07-01 13:18:53 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fb2ec56af50 'com.apple.dt.runtime.swiftCore' '<DVTFilePath:0x7fb2ebe26230:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCore.dylib'>'>
+2017-07-01 13:18:53 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fb2ec1b1050 'com.apple.dt.runtime.swiftCoreData' '<DVTFilePath:0x7fb30108b7e0:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCoreData.dylib'>'>
+2017-07-01 13:18:53 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fb2ec90e700 'com.apple.dt.runtime.swiftCoreFoundation' '<DVTFilePath:0x7fb2ecb35ec0:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCoreFoundation.dylib'>'>
+2017-07-01 13:18:53 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fb2e8c86f10 'com.apple.dt.runtime.swiftCoreGraphics' '<DVTFilePath:0x7fb3010672b0:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCoreGraphics.dylib'>'>
+2017-07-01 13:18:53 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fb2ebb01290 'com.apple.dt.runtime.swiftCoreImage' '<DVTFilePath:0x7fb2ec9f8e30:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCoreImage.dylib'>'>
+2017-07-01 13:18:53 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fb2e1fbd350 'com.apple.dt.runtime.swiftDarwin' '<DVTFilePath:0x7fb2ec9102d0:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftDarwin.dylib'>'>
+2017-07-01 13:18:53 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fb2e1fc4650 'com.apple.dt.runtime.swiftDispatch' '<DVTFilePath:0x7fb2ec906220:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftDispatch.dylib'>'>
+2017-07-01 13:18:53 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fb2f6e21a70 'com.apple.dt.runtime.swiftFoundation' '<DVTFilePath:0x7fb2f8546f50:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftFoundation.dylib'>'>
+2017-07-01 13:18:53 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fb2e1f4eb00 'com.apple.dt.runtime.swiftIOKit' '<DVTFilePath:0x7fb2ec8f3260:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftIOKit.dylib'>'>
+2017-07-01 13:18:53 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fb2e40e8240 'com.apple.dt.runtime.swiftObjectiveC' '<DVTFilePath:0x7fb2ecb22760:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftObjectiveC.dylib'>'>
+2017-07-01 13:18:53 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fb2e9edb8a0 'com.apple.dt.runtime.swiftQuartzCore' '<DVTFilePath:0x7fb2ecb0ba80:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftQuartzCore.dylib'>'>
+2017-07-01 13:18:53 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fb2e9cd9a80 'com.apple.dt.runtime.swiftXPC' '<DVTFilePath:0x7fb2ecb2b040:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftXPC.dylib'>'>
+2017-07-01 13:18:53 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fb2e2eb90a0 'com.apple.dt.runtime.swiftos' '<DVTFilePath:0x7fb2ec905b70:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftos.dylib'>'>
+2017-07-01 13:18:53 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fb2ec6801f0 's10284tk.iArtworkforMac' '<DVTFilePath:0x7fb2e9c6f410:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app'>'>
+2017-07-01 13:18:53 +0000  Processing step: IDEDistributionAppThinningPlistStep
+2017-07-01 13:18:53 +0000  Processing step: IDEDistributionCompileBitcodeStep
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionCompileBitcodeStep because it said so
+2017-07-01 13:18:53 +0000  Processing step: IDEDistributionCodeSlimmingStep
+2017-07-01 13:18:53 +0000  Processing step: IDEDistributionCopyBCSymbolMapsStep
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2017-07-01 13:18:53 +0000  Processing step: IDEDistributionSymbolsStep
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2017-07-01 13:18:53 +0000  Processing step: IDEDistributionAppThinningStep
+2017-07-01 13:18:53 +0000  Skipping step: IDEDistributionAppThinningStep because it said so
+2017-07-01 13:18:53 +0000  Processing step: IDEDistributionODRStep
+2017-07-01 13:18:53 +0000  Processing step: IDEDistributionStripXattrsStep
+2017-07-01 13:18:53 +0000  Running /usr/bin/xattr '-cr' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/Alamofire.framework/Versions/A'
+2017-07-01 13:18:53 +0000  /usr/bin/xattr exited with 0
+2017-07-01 13:18:53 +0000  Running /usr/bin/xattr '-cr' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/AlamofireImage.framework/Versions/A'
+2017-07-01 13:18:53 +0000  /usr/bin/xattr exited with 0
+2017-07-01 13:18:53 +0000  Running /usr/bin/xattr '-cr' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/Kingfisher.framework/Versions/A'
+2017-07-01 13:18:54 +0000  /usr/bin/xattr exited with 0
+2017-07-01 13:18:54 +0000  Running /usr/bin/xattr '-cr' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftAccelerate.dylib'
+2017-07-01 13:18:54 +0000  /usr/bin/xattr exited with 0
+2017-07-01 13:18:54 +0000  Running /usr/bin/xattr '-cr' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftAppKit.dylib'
+2017-07-01 13:18:54 +0000  /usr/bin/xattr exited with 0
+2017-07-01 13:18:54 +0000  Running /usr/bin/xattr '-cr' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCore.dylib'
+2017-07-01 13:18:54 +0000  /usr/bin/xattr exited with 0
+2017-07-01 13:18:54 +0000  Running /usr/bin/xattr '-cr' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCoreData.dylib'
+2017-07-01 13:18:55 +0000  /usr/bin/xattr exited with 0
+2017-07-01 13:18:55 +0000  Running /usr/bin/xattr '-cr' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCoreFoundation.dylib'
+2017-07-01 13:18:55 +0000  /usr/bin/xattr exited with 0
+2017-07-01 13:18:55 +0000  Running /usr/bin/xattr '-cr' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCoreGraphics.dylib'
+2017-07-01 13:18:55 +0000  /usr/bin/xattr exited with 0
+2017-07-01 13:18:55 +0000  Running /usr/bin/xattr '-cr' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCoreImage.dylib'
+2017-07-01 13:18:56 +0000  /usr/bin/xattr exited with 0
+2017-07-01 13:18:56 +0000  Running /usr/bin/xattr '-cr' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftDarwin.dylib'
+2017-07-01 13:18:56 +0000  /usr/bin/xattr exited with 0
+2017-07-01 13:18:56 +0000  Running /usr/bin/xattr '-cr' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftDispatch.dylib'
+2017-07-01 13:18:56 +0000  /usr/bin/xattr exited with 0
+2017-07-01 13:18:56 +0000  Running /usr/bin/xattr '-cr' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftFoundation.dylib'
+2017-07-01 13:18:57 +0000  /usr/bin/xattr exited with 0
+2017-07-01 13:18:57 +0000  Running /usr/bin/xattr '-cr' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftIOKit.dylib'
+2017-07-01 13:18:57 +0000  /usr/bin/xattr exited with 0
+2017-07-01 13:18:57 +0000  Running /usr/bin/xattr '-cr' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftObjectiveC.dylib'
+2017-07-01 13:18:57 +0000  /usr/bin/xattr exited with 0
+2017-07-01 13:18:57 +0000  Running /usr/bin/xattr '-cr' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftQuartzCore.dylib'
+2017-07-01 13:18:58 +0000  /usr/bin/xattr exited with 0
+2017-07-01 13:18:58 +0000  Running /usr/bin/xattr '-cr' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftXPC.dylib'
+2017-07-01 13:18:58 +0000  /usr/bin/xattr exited with 0
+2017-07-01 13:18:58 +0000  Running /usr/bin/xattr '-cr' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftos.dylib'
+2017-07-01 13:18:59 +0000  /usr/bin/xattr exited with 0
+2017-07-01 13:18:59 +0000  Running /usr/bin/xattr '-cr' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app'
+2017-07-01 13:18:59 +0000  /usr/bin/xattr exited with 0
+2017-07-01 13:18:59 +0000  Processing step: IDEDistributionCodesignStep
+2017-07-01 13:18:59 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7fb2ec6948b0 'org.alamofire.Alamofire' '<DVTFilePath:0x7fb2e9c87ed0:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/Alamofire.framework/Versions/A'>'> from <IDEiCloudEntitlementsProcessor: 0x7fb2e1f36b10>: {
+}
+2017-07-01 13:18:59 +0000  Entitlements for <IDEDistributionItem: 0x7fb2ec6948b0 'org.alamofire.Alamofire' '<DVTFilePath:0x7fb2e9c87ed0:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/Alamofire.framework/Versions/A'>'>: {
+}
+2017-07-01 13:18:59 +0000  Writing entitlements for <IDEDistributionItem: 0x7fb2ec6948b0 'org.alamofire.Alamofire' '<DVTFilePath:0x7fb2e9c87ed0:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/Alamofire.framework/Versions/A'>'> to: /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlementsQ026UX
+2017-07-01 13:18:59 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '64F7AE7975C0C34851ECE6CAD2B954697DA7526B' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlementsQ026UX' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/Alamofire.framework/Versions/A'
+2017-07-01 13:18:59 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/Alamofire.framework/Versions/A: replacing existing signature
+2017-07-01 13:18:59 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/Alamofire.framework/Versions/A: signed bundle with Mach-O thin (x86_64) [org.alamofire.Alamofire]
+2017-07-01 13:18:59 +0000  /usr/bin/codesign exited with 0
+2017-07-01 13:18:59 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7fb2e29c3640 'org.alamofire.AlamofireImage' '<DVTFilePath:0x7fb2e1fa82a0:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/AlamofireImage.framework/Versions/A'>'> from <IDEiCloudEntitlementsProcessor: 0x7fb2e1faa7f0>: {
+}
+2017-07-01 13:18:59 +0000  Entitlements for <IDEDistributionItem: 0x7fb2e29c3640 'org.alamofire.AlamofireImage' '<DVTFilePath:0x7fb2e1fa82a0:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/AlamofireImage.framework/Versions/A'>'>: {
+}
+2017-07-01 13:18:59 +0000  Writing entitlements for <IDEDistributionItem: 0x7fb2e29c3640 'org.alamofire.AlamofireImage' '<DVTFilePath:0x7fb2e1fa82a0:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/AlamofireImage.framework/Versions/A'>'> to: /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlementsCGrEn8
+2017-07-01 13:18:59 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '64F7AE7975C0C34851ECE6CAD2B954697DA7526B' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlementsCGrEn8' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/AlamofireImage.framework/Versions/A'
+2017-07-01 13:18:59 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/AlamofireImage.framework/Versions/A: replacing existing signature
+2017-07-01 13:18:59 +0000  
+2017-07-01 13:18:59 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/AlamofireImage.framework/Versions/A: signed bundle with Mach-O thin (x86_64) [org.alamofire.AlamofireImage]
+2017-07-01 13:18:59 +0000  
+2017-07-01 13:18:59 +0000  /usr/bin/codesign exited with 0
+2017-07-01 13:18:59 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7fb2e68e7520 'com.onevcat.Kingfisher-OSX' '<DVTFilePath:0x7fb2e9c766c0:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/Kingfisher.framework/Versions/A'>'> from <IDEiCloudEntitlementsProcessor: 0x7fb2eb8ef030>: {
+}
+2017-07-01 13:18:59 +0000  Entitlements for <IDEDistributionItem: 0x7fb2e68e7520 'com.onevcat.Kingfisher-OSX' '<DVTFilePath:0x7fb2e9c766c0:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/Kingfisher.framework/Versions/A'>'>: {
+}
+2017-07-01 13:18:59 +0000  Writing entitlements for <IDEDistributionItem: 0x7fb2e68e7520 'com.onevcat.Kingfisher-OSX' '<DVTFilePath:0x7fb2e9c766c0:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/Kingfisher.framework/Versions/A'>'> to: /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlementsyM73DI
+2017-07-01 13:18:59 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '64F7AE7975C0C34851ECE6CAD2B954697DA7526B' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlementsyM73DI' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/Kingfisher.framework/Versions/A'
+2017-07-01 13:19:00 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/Kingfisher.framework/Versions/A: replacing existing signature
+2017-07-01 13:19:00 +0000  
+2017-07-01 13:19:00 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/Kingfisher.framework/Versions/A: signed bundle with Mach-O thin (x86_64) [com.onevcat.Kingfisher-OSX]
+2017-07-01 13:19:00 +0000  /usr/bin/codesign exited with 0
+2017-07-01 13:19:00 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7fb2e9f99a00 'com.apple.dt.runtime.swiftAccelerate' '<DVTFilePath:0x7fb2ec90d370:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftAccelerate.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7fb2ebaeb3e0>: {
+}
+2017-07-01 13:19:00 +0000  Entitlements for <IDEDistributionItem: 0x7fb2e9f99a00 'com.apple.dt.runtime.swiftAccelerate' '<DVTFilePath:0x7fb2ec90d370:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftAccelerate.dylib'>'>: {
+}
+2017-07-01 13:19:00 +0000  Writing entitlements for <IDEDistributionItem: 0x7fb2e9f99a00 'com.apple.dt.runtime.swiftAccelerate' '<DVTFilePath:0x7fb2ec90d370:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftAccelerate.dylib'>'> to: /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlementsWpMUEc
+2017-07-01 13:19:00 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '64F7AE7975C0C34851ECE6CAD2B954697DA7526B' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlementsWpMUEc' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftAccelerate.dylib'
+2017-07-01 13:19:00 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftAccelerate.dylib: replacing existing signature
+2017-07-01 13:19:00 +0000  
+2017-07-01 13:19:00 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftAccelerate.dylib: signed Mach-O thin (x86_64) [com.apple.dt.runtime.swiftAccelerate]
+2017-07-01 13:19:00 +0000  /usr/bin/codesign exited with 0
+2017-07-01 13:19:00 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7fb2e9c43b10 'com.apple.dt.runtime.swiftAppKit' '<DVTFilePath:0x7fb2ec9b1ef0:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftAppKit.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7fb2e2958bc0>: {
+}
+2017-07-01 13:19:00 +0000  Entitlements for <IDEDistributionItem: 0x7fb2e9c43b10 'com.apple.dt.runtime.swiftAppKit' '<DVTFilePath:0x7fb2ec9b1ef0:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftAppKit.dylib'>'>: {
+}
+2017-07-01 13:19:00 +0000  Writing entitlements for <IDEDistributionItem: 0x7fb2e9c43b10 'com.apple.dt.runtime.swiftAppKit' '<DVTFilePath:0x7fb2ec9b1ef0:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftAppKit.dylib'>'> to: /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlementseuCFcv
+2017-07-01 13:19:00 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '64F7AE7975C0C34851ECE6CAD2B954697DA7526B' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlementseuCFcv' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftAppKit.dylib'
+2017-07-01 13:19:00 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftAppKit.dylib: replacing existing signature
+2017-07-01 13:19:01 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftAppKit.dylib: signed Mach-O thin (x86_64) [com.apple.dt.runtime.swiftAppKit]
+2017-07-01 13:19:01 +0000  /usr/bin/codesign exited with 0
+2017-07-01 13:19:01 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7fb2ec56af50 'com.apple.dt.runtime.swiftCore' '<DVTFilePath:0x7fb2ebe26230:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCore.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7fb2e1fbd7d0>: {
+}
+2017-07-01 13:19:01 +0000  Entitlements for <IDEDistributionItem: 0x7fb2ec56af50 'com.apple.dt.runtime.swiftCore' '<DVTFilePath:0x7fb2ebe26230:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCore.dylib'>'>: {
+}
+2017-07-01 13:19:01 +0000  Writing entitlements for <IDEDistributionItem: 0x7fb2ec56af50 'com.apple.dt.runtime.swiftCore' '<DVTFilePath:0x7fb2ebe26230:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCore.dylib'>'> to: /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlements6Mc4R6
+2017-07-01 13:19:01 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '64F7AE7975C0C34851ECE6CAD2B954697DA7526B' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlements6Mc4R6' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCore.dylib'
+2017-07-01 13:19:01 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCore.dylib: replacing existing signature
+2017-07-01 13:19:01 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCore.dylib: signed Mach-O thin (x86_64) [com.apple.dt.runtime.swiftCore]
+2017-07-01 13:19:01 +0000  /usr/bin/codesign exited with 0
+2017-07-01 13:19:01 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7fb2ec1b1050 'com.apple.dt.runtime.swiftCoreData' '<DVTFilePath:0x7fb30108b7e0:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCoreData.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7fb2e9e737b0>: {
+}
+2017-07-01 13:19:01 +0000  Entitlements for <IDEDistributionItem: 0x7fb2ec1b1050 'com.apple.dt.runtime.swiftCoreData' '<DVTFilePath:0x7fb30108b7e0:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCoreData.dylib'>'>: {
+}
+2017-07-01 13:19:01 +0000  Writing entitlements for <IDEDistributionItem: 0x7fb2ec1b1050 'com.apple.dt.runtime.swiftCoreData' '<DVTFilePath:0x7fb30108b7e0:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCoreData.dylib'>'> to: /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlementscSHZA9
+2017-07-01 13:19:01 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '64F7AE7975C0C34851ECE6CAD2B954697DA7526B' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlementscSHZA9' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCoreData.dylib'
+2017-07-01 13:19:01 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCoreData.dylib: replacing existing signature
+2017-07-01 13:19:01 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCoreData.dylib: signed Mach-O thin (x86_64) [com.apple.dt.runtime.swiftCoreData]
+2017-07-01 13:19:01 +0000  /usr/bin/codesign exited with 0
+2017-07-01 13:19:01 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7fb2ec90e700 'com.apple.dt.runtime.swiftCoreFoundation' '<DVTFilePath:0x7fb2ecb35ec0:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCoreFoundation.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7fb2e29278a0>: {
+}
+2017-07-01 13:19:01 +0000  Entitlements for <IDEDistributionItem: 0x7fb2ec90e700 'com.apple.dt.runtime.swiftCoreFoundation' '<DVTFilePath:0x7fb2ecb35ec0:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCoreFoundation.dylib'>'>: {
+}
+2017-07-01 13:19:01 +0000  Writing entitlements for <IDEDistributionItem: 0x7fb2ec90e700 'com.apple.dt.runtime.swiftCoreFoundation' '<DVTFilePath:0x7fb2ecb35ec0:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCoreFoundation.dylib'>'> to: /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlements38pZdQ
+2017-07-01 13:19:01 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '64F7AE7975C0C34851ECE6CAD2B954697DA7526B' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlements38pZdQ' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCoreFoundation.dylib'
+2017-07-01 13:19:02 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCoreFoundation.dylib: replacing existing signature
+2017-07-01 13:19:02 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCoreFoundation.dylib: signed Mach-O thin (x86_64) [com.apple.dt.runtime.swiftCoreFoundation]
+2017-07-01 13:19:02 +0000  
+2017-07-01 13:19:02 +0000  /usr/bin/codesign exited with 0
+2017-07-01 13:19:02 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7fb2e8c86f10 'com.apple.dt.runtime.swiftCoreGraphics' '<DVTFilePath:0x7fb3010672b0:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCoreGraphics.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7fb2e2970bf0>: {
+}
+2017-07-01 13:19:02 +0000  Entitlements for <IDEDistributionItem: 0x7fb2e8c86f10 'com.apple.dt.runtime.swiftCoreGraphics' '<DVTFilePath:0x7fb3010672b0:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCoreGraphics.dylib'>'>: {
+}
+2017-07-01 13:19:02 +0000  Writing entitlements for <IDEDistributionItem: 0x7fb2e8c86f10 'com.apple.dt.runtime.swiftCoreGraphics' '<DVTFilePath:0x7fb3010672b0:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCoreGraphics.dylib'>'> to: /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlements5vocu5
+2017-07-01 13:19:02 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '64F7AE7975C0C34851ECE6CAD2B954697DA7526B' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlements5vocu5' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCoreGraphics.dylib'
+2017-07-01 13:19:02 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCoreGraphics.dylib: replacing existing signature
+2017-07-01 13:19:02 +0000  
+2017-07-01 13:19:02 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCoreGraphics.dylib: signed Mach-O thin (x86_64) [com.apple.dt.runtime.swiftCoreGraphics]
+2017-07-01 13:19:02 +0000  /usr/bin/codesign exited with 0
+2017-07-01 13:19:02 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7fb2ebb01290 'com.apple.dt.runtime.swiftCoreImage' '<DVTFilePath:0x7fb2ec9f8e30:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCoreImage.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7fb2e1f4bb70>: {
+}
+2017-07-01 13:19:02 +0000  Entitlements for <IDEDistributionItem: 0x7fb2ebb01290 'com.apple.dt.runtime.swiftCoreImage' '<DVTFilePath:0x7fb2ec9f8e30:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCoreImage.dylib'>'>: {
+}
+2017-07-01 13:19:02 +0000  Writing entitlements for <IDEDistributionItem: 0x7fb2ebb01290 'com.apple.dt.runtime.swiftCoreImage' '<DVTFilePath:0x7fb2ec9f8e30:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCoreImage.dylib'>'> to: /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlementsmrceYZ
+2017-07-01 13:19:02 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '64F7AE7975C0C34851ECE6CAD2B954697DA7526B' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlementsmrceYZ' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCoreImage.dylib'
+2017-07-01 13:19:02 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCoreImage.dylib: replacing existing signature
+2017-07-01 13:19:02 +0000  
+2017-07-01 13:19:02 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftCoreImage.dylib: signed Mach-O thin (x86_64) [com.apple.dt.runtime.swiftCoreImage]
+2017-07-01 13:19:02 +0000  /usr/bin/codesign exited with 0
+2017-07-01 13:19:02 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7fb2e1fbd350 'com.apple.dt.runtime.swiftDarwin' '<DVTFilePath:0x7fb2ec9102d0:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftDarwin.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7fb2e2927810>: {
+}
+2017-07-01 13:19:02 +0000  Entitlements for <IDEDistributionItem: 0x7fb2e1fbd350 'com.apple.dt.runtime.swiftDarwin' '<DVTFilePath:0x7fb2ec9102d0:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftDarwin.dylib'>'>: {
+}
+2017-07-01 13:19:02 +0000  Writing entitlements for <IDEDistributionItem: 0x7fb2e1fbd350 'com.apple.dt.runtime.swiftDarwin' '<DVTFilePath:0x7fb2ec9102d0:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftDarwin.dylib'>'> to: /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlementsdUF3yv
+2017-07-01 13:19:02 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '64F7AE7975C0C34851ECE6CAD2B954697DA7526B' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlementsdUF3yv' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftDarwin.dylib'
+2017-07-01 13:19:03 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftDarwin.dylib: replacing existing signature
+2017-07-01 13:19:03 +0000  
+2017-07-01 13:19:03 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftDarwin.dylib: signed Mach-O thin (x86_64) [com.apple.dt.runtime.swiftDarwin]
+2017-07-01 13:19:03 +0000  /usr/bin/codesign exited with 0
+2017-07-01 13:19:03 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7fb2e1fc4650 'com.apple.dt.runtime.swiftDispatch' '<DVTFilePath:0x7fb2ec906220:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftDispatch.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7fb2e1fc5210>: {
+}
+2017-07-01 13:19:03 +0000  Entitlements for <IDEDistributionItem: 0x7fb2e1fc4650 'com.apple.dt.runtime.swiftDispatch' '<DVTFilePath:0x7fb2ec906220:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftDispatch.dylib'>'>: {
+}
+2017-07-01 13:19:03 +0000  Writing entitlements for <IDEDistributionItem: 0x7fb2e1fc4650 'com.apple.dt.runtime.swiftDispatch' '<DVTFilePath:0x7fb2ec906220:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftDispatch.dylib'>'> to: /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlementsyBlmZN
+2017-07-01 13:19:03 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '64F7AE7975C0C34851ECE6CAD2B954697DA7526B' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlementsyBlmZN' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftDispatch.dylib'
+2017-07-01 13:19:03 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftDispatch.dylib: replacing existing signature
+2017-07-01 13:19:03 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftDispatch.dylib: signed Mach-O thin (x86_64) [com.apple.dt.runtime.swiftDispatch]
+2017-07-01 13:19:03 +0000  /usr/bin/codesign exited with 0
+2017-07-01 13:19:03 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7fb2f6e21a70 'com.apple.dt.runtime.swiftFoundation' '<DVTFilePath:0x7fb2f8546f50:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftFoundation.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7fb2e2953280>: {
+}
+2017-07-01 13:19:03 +0000  Entitlements for <IDEDistributionItem: 0x7fb2f6e21a70 'com.apple.dt.runtime.swiftFoundation' '<DVTFilePath:0x7fb2f8546f50:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftFoundation.dylib'>'>: {
+}
+2017-07-01 13:19:03 +0000  Writing entitlements for <IDEDistributionItem: 0x7fb2f6e21a70 'com.apple.dt.runtime.swiftFoundation' '<DVTFilePath:0x7fb2f8546f50:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftFoundation.dylib'>'> to: /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlementsVhfjiD
+2017-07-01 13:19:03 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '64F7AE7975C0C34851ECE6CAD2B954697DA7526B' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlementsVhfjiD' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftFoundation.dylib'
+2017-07-01 13:19:03 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftFoundation.dylib: replacing existing signature
+2017-07-01 13:19:04 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftFoundation.dylib: signed Mach-O thin (x86_64) [com.apple.dt.runtime.swiftFoundation]
+2017-07-01 13:19:04 +0000  /usr/bin/codesign exited with 0
+2017-07-01 13:19:04 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7fb2e1f4eb00 'com.apple.dt.runtime.swiftIOKit' '<DVTFilePath:0x7fb2ec8f3260:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftIOKit.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7fb2e969ca60>: {
+}
+2017-07-01 13:19:04 +0000  Entitlements for <IDEDistributionItem: 0x7fb2e1f4eb00 'com.apple.dt.runtime.swiftIOKit' '<DVTFilePath:0x7fb2ec8f3260:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftIOKit.dylib'>'>: {
+}
+2017-07-01 13:19:04 +0000  Writing entitlements for <IDEDistributionItem: 0x7fb2e1f4eb00 'com.apple.dt.runtime.swiftIOKit' '<DVTFilePath:0x7fb2ec8f3260:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftIOKit.dylib'>'> to: /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlementsGEar6e
+2017-07-01 13:19:04 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '64F7AE7975C0C34851ECE6CAD2B954697DA7526B' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlementsGEar6e' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftIOKit.dylib'
+2017-07-01 13:19:04 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftIOKit.dylib: replacing existing signature
+2017-07-01 13:19:04 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftIOKit.dylib: signed Mach-O thin (x86_64) [com.apple.dt.runtime.swiftIOKit]
+2017-07-01 13:19:04 +0000  /usr/bin/codesign exited with 0
+2017-07-01 13:19:04 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7fb2e40e8240 'com.apple.dt.runtime.swiftObjectiveC' '<DVTFilePath:0x7fb2ecb22760:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftObjectiveC.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7fb2e1f8bf70>: {
+}
+2017-07-01 13:19:04 +0000  Entitlements for <IDEDistributionItem: 0x7fb2e40e8240 'com.apple.dt.runtime.swiftObjectiveC' '<DVTFilePath:0x7fb2ecb22760:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftObjectiveC.dylib'>'>: {
+}
+2017-07-01 13:19:04 +0000  Writing entitlements for <IDEDistributionItem: 0x7fb2e40e8240 'com.apple.dt.runtime.swiftObjectiveC' '<DVTFilePath:0x7fb2ecb22760:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftObjectiveC.dylib'>'> to: /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlementsTwLBVL
+2017-07-01 13:19:04 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '64F7AE7975C0C34851ECE6CAD2B954697DA7526B' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlementsTwLBVL' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftObjectiveC.dylib'
+2017-07-01 13:19:04 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftObjectiveC.dylib: replacing existing signature
+2017-07-01 13:19:04 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftObjectiveC.dylib: signed Mach-O thin (x86_64) [com.apple.dt.runtime.swiftObjectiveC]
+2017-07-01 13:19:04 +0000  /usr/bin/codesign exited with 0
+2017-07-01 13:19:04 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7fb2e9edb8a0 'com.apple.dt.runtime.swiftQuartzCore' '<DVTFilePath:0x7fb2ecb0ba80:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftQuartzCore.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7fb2e1f47c70>: {
+}
+2017-07-01 13:19:04 +0000  Entitlements for <IDEDistributionItem: 0x7fb2e9edb8a0 'com.apple.dt.runtime.swiftQuartzCore' '<DVTFilePath:0x7fb2ecb0ba80:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftQuartzCore.dylib'>'>: {
+}
+2017-07-01 13:19:04 +0000  Writing entitlements for <IDEDistributionItem: 0x7fb2e9edb8a0 'com.apple.dt.runtime.swiftQuartzCore' '<DVTFilePath:0x7fb2ecb0ba80:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftQuartzCore.dylib'>'> to: /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlementsTrNt4G
+2017-07-01 13:19:04 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '64F7AE7975C0C34851ECE6CAD2B954697DA7526B' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlementsTrNt4G' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftQuartzCore.dylib'
+2017-07-01 13:19:05 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftQuartzCore.dylib: replacing existing signature
+2017-07-01 13:19:05 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftQuartzCore.dylib: signed Mach-O thin (x86_64) [com.apple.dt.runtime.swiftQuartzCore]
+2017-07-01 13:19:05 +0000  /usr/bin/codesign exited with 0
+2017-07-01 13:19:05 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7fb2e9cd9a80 'com.apple.dt.runtime.swiftXPC' '<DVTFilePath:0x7fb2ecb2b040:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftXPC.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7fb2e1f59350>: {
+}
+2017-07-01 13:19:05 +0000  Entitlements for <IDEDistributionItem: 0x7fb2e9cd9a80 'com.apple.dt.runtime.swiftXPC' '<DVTFilePath:0x7fb2ecb2b040:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftXPC.dylib'>'>: {
+}
+2017-07-01 13:19:05 +0000  Writing entitlements for <IDEDistributionItem: 0x7fb2e9cd9a80 'com.apple.dt.runtime.swiftXPC' '<DVTFilePath:0x7fb2ecb2b040:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftXPC.dylib'>'> to: /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlementsdiTWil
+2017-07-01 13:19:05 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '64F7AE7975C0C34851ECE6CAD2B954697DA7526B' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlementsdiTWil' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftXPC.dylib'
+2017-07-01 13:19:05 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftXPC.dylib: replacing existing signature
+2017-07-01 13:19:05 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftXPC.dylib: signed Mach-O thin (x86_64) [com.apple.dt.runtime.swiftXPC]
+2017-07-01 13:19:05 +0000  /usr/bin/codesign exited with 0
+2017-07-01 13:19:05 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7fb2e2eb90a0 'com.apple.dt.runtime.swiftos' '<DVTFilePath:0x7fb2ec905b70:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftos.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7fb2fa15a820>: {
+}
+2017-07-01 13:19:05 +0000  Entitlements for <IDEDistributionItem: 0x7fb2e2eb90a0 'com.apple.dt.runtime.swiftos' '<DVTFilePath:0x7fb2ec905b70:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftos.dylib'>'>: {
+}
+2017-07-01 13:19:05 +0000  Writing entitlements for <IDEDistributionItem: 0x7fb2e2eb90a0 'com.apple.dt.runtime.swiftos' '<DVTFilePath:0x7fb2ec905b70:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftos.dylib'>'> to: /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlementsS7Pzjk
+2017-07-01 13:19:05 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '64F7AE7975C0C34851ECE6CAD2B954697DA7526B' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlementsS7Pzjk' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftos.dylib'
+2017-07-01 13:19:05 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftos.dylib: replacing existing signature
+2017-07-01 13:19:06 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app/Contents/Frameworks/libswiftos.dylib: signed Mach-O thin (x86_64) [com.apple.dt.runtime.swiftos]
+2017-07-01 13:19:06 +0000  /usr/bin/codesign exited with 0
+2017-07-01 13:19:06 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7fb2ec6801f0 's10284tk.iArtworkforMac' '<DVTFilePath:0x7fb2e9c6f410:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app'>'> from <IDEiCloudEntitlementsProcessor: 0x7fb2e1fc8a40>: {
+}
+2017-07-01 13:19:06 +0000  Entitlements for <IDEDistributionItem: 0x7fb2ec6801f0 's10284tk.iArtworkforMac' '<DVTFilePath:0x7fb2e9c6f410:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app'>'>: {
+}
+2017-07-01 13:19:06 +0000  Writing entitlements for <IDEDistributionItem: 0x7fb2ec6801f0 's10284tk.iArtworkforMac' '<DVTFilePath:0x7fb2e9c6f410:'/Users/piyo/Library/Developer/Xcode/Archives/2017-07-01/iArtworkforMac 2017-07-01 22.16.xcarchive/Products/Applications/iArtworkforMac.app'>'> to: /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlementslknorX
+2017-07-01 13:19:06 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '64F7AE7975C0C34851ECE6CAD2B954697DA7526B' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/entitlementslknorX' '/var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app'
+2017-07-01 13:19:06 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app: replacing existing signature
+2017-07-01 13:19:06 +0000  
+2017-07-01 13:19:06 +0000  /var/folders/mh/s47cvfnx74s5s_bm78mzdtzw0000gn/T/XcodeDistPipeline.syG/Root/Applications/iArtworkforMac.app: signed app bundle with Mach-O thin (x86_64) [s10284tk.iArtworkforMac]
+2017-07-01 13:19:06 +0000  /usr/bin/codesign exited with 0
+2017-07-01 13:19:06 +0000  Processing step: IDEDistributionStreamingZipItemStep
+2017-07-01 13:19:06 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-07-01 13:19:06 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-07-01 13:19:06 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-07-01 13:19:06 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-07-01 13:19:06 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-07-01 13:19:06 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-07-01 13:19:06 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-07-01 13:19:06 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-07-01 13:19:06 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-07-01 13:19:06 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-07-01 13:19:06 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-07-01 13:19:06 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-07-01 13:19:06 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-07-01 13:19:06 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-07-01 13:19:06 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-07-01 13:19:06 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-07-01 13:19:06 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-07-01 13:19:06 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-07-01 13:19:06 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-07-01 13:19:06 +0000  Processing step: IDEDistributionSkipPackagingStep
+2017-07-01 13:19:06 +0000  Processing step: IDEDistributionCreateManifestStep
+2017-07-01 13:19:06 +0000  Skipping step: IDEDistributionCreateManifestStep because it said so

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>iArtworkforMac</key>
+	<array>
+		<dict>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>64F7AE7975C0C34851ECE6CAD2B954697DA7526B</string>
+				<key>dateExpires</key>
+				<string>2018/07/01</string>
+				<key>type</key>
+				<string>Mac Development</string>
+			</dict>
+			<key>embeddedBinaries</key>
+			<array>
+				<dict>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>64F7AE7975C0C34851ECE6CAD2B954697DA7526B</string>
+						<key>dateExpires</key>
+						<string>2018/07/01</string>
+						<key>type</key>
+						<string>Mac Development</string>
+					</dict>
+					<key>name</key>
+					<string>A</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>ZF2L8YKC2B</string>
+						<key>name</key>
+						<string>貴臣 窪田 (Personal Team)</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>64F7AE7975C0C34851ECE6CAD2B954697DA7526B</string>
+						<key>dateExpires</key>
+						<string>2018/07/01</string>
+						<key>type</key>
+						<string>Mac Development</string>
+					</dict>
+					<key>name</key>
+					<string>A</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>ZF2L8YKC2B</string>
+						<key>name</key>
+						<string>貴臣 窪田 (Personal Team)</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>64F7AE7975C0C34851ECE6CAD2B954697DA7526B</string>
+						<key>dateExpires</key>
+						<string>2018/07/01</string>
+						<key>type</key>
+						<string>Mac Development</string>
+					</dict>
+					<key>name</key>
+					<string>A</string>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>ZF2L8YKC2B</string>
+						<key>name</key>
+						<string>貴臣 窪田 (Personal Team)</string>
+					</dict>
+				</dict>
+			</array>
+			<key>name</key>
+			<string>iArtworkforMac.app</string>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>ZF2L8YKC2B</string>
+				<key>name</key>
+				<string>貴臣 窪田 (Personal Team)</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
